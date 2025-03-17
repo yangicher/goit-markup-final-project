@@ -1,0 +1,12 @@
+{
+    "name": "goit-markup-final-project",
+    "version": "1.0.0",
+    "description": "My Project for GitHub Pages Deployment",
+    "scripts": {
+      "deploy": "gh-pages -d src"
+    },
+    "dependencies": {
+      "gh-pages": "^5.0.0"
+    }
+  }
+  
