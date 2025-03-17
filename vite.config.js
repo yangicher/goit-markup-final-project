@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
+const { glob } = await import("glob");
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+
 
 export default defineConfig(({ command }) => {
   return {
@@ -38,7 +39,11 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
-      injectHTML(),
+      injectHTML({
+        injectData: {
+          partials: '/src/partials/'  // 👈 Correct path to your partials folder
+        }
+      }),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
