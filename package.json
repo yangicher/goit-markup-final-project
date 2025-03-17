@@ -1,12 +1,22 @@
 {
     "name": "goit-markup-final-project",
-    "version": "1.0.0",
-    "description": "My Project for GitHub Pages Deployment",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "homepage": "https://yangicher.github.io/goit-markup-final-project",
     "scripts": {
-      "deploy": "gh-pages -d src"
+      "dev": "vite",
+      "build": "vite build --base=/goit-markup-final-project/",
+      "preview": "vite preview"
     },
+    "devDependencies": {
+      "glob": "^8.1.0",
+      "vite": "^4.5.2"
+    },
+    "license": "ISC",
     "dependencies": {
-      "gh-pages": "^5.0.0"
+      "swiper": "^11.1.1",
+      "vite-plugin-full-reload": "^1.0.5",
+      "vite-plugin-html-inject": "^1.0.1"
     }
   }
-  
