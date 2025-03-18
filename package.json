@@ -5,7 +5,8 @@
   "type": "module",
   "homepage": "https://yangicher.github.io/goit-markup-final-project",
   "scripts": {
-    "deploy": "gh-pages -d src"
+    "build": "vite build --base=/goit-markup-final-project/",
+    "deploy": "gh-pages -d dist"
   },
   "license": "ISC",
   "main": "index.js",

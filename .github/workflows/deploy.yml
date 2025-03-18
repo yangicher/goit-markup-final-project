@@ -10,11 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
+
       - run: npm install
+
+      # Set Git Config
       - run: git config --global user.email "sergey.yangicher@gmail.com"
       - run: git config --global user.name "Sergey Yangicher"
-      - run: npm run deploy
-      - run: npx gh-pages -d src
+
+      # Build the Project
+      - run: npm run build
+
+      # Deploy Using `gh-pages` with GitHub Token
+      - run: npx gh-pages -d dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
