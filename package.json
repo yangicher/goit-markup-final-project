@@ -1,0 +1,19 @@
+{
+  "name": "goit-markup-final-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://yangicher.github.io/goit-markup-final-project",
+  "scripts": {
+    "deploy": "gh-pages -d src --repo https://github.com/yangicher/goit-markup-final-project.git"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "keywords": [],
+  "author": "siangicher <sergey.yangicher@gmail.com>",
+  "devDependencies": {
+    "fs-extra": "^11.3.0",
+    "gh-pages": "^6.3.0"
+  },
+  "description": ""
+}
