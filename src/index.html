@@ -18,41 +18,17 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <div id="header-container"></div>
+        <load src="./partials/header.html" />
         <main>
-            <div id="hero-container"></div>
-            <div id="about-container"></div>
-            <div id="lessons-container"></div>
-            <div id="cta-container"></div>
-            <div id="team-container"></div>
-            <div id="app-container"></div>
-            <div id="feedback-container"></div>
-        </main>
-          <div id="footer-container"></div>
-          <div id="menu-container"></div>
+          <load src="./partials/hero.html" />
+          <load src="./partials/about.html" />
+          <load src="./partials/lessons.html" />
+          <load src="./partials/cta.html" />
+          <load src="./partials/team.html" />
+          <load src="./partials/application.html" />
+          <load src="./partials/feedback.html" />
+      </main>
+        <load src="./partials/footer.html" />
+        <load src="./partials/menu.html" />
     </body>
 </html>
-
-<script>
-    async function loadHTML(selector, file) {
-        const element = document.querySelector(selector);
-        if (element) {
-            const response = await fetch(file);
-            const content = await response.text();
-            element.innerHTML = content;
-        }
-    }
-  
-    document.addEventListener('DOMContentLoaded', function () {
-        loadHTML('#header-container', './partials/header.html');
-        loadHTML('#hero-container', './partials/hero.html');
-        loadHTML('#footer-container', "./partials/footer.html");
-        loadHTML('#menu-container', "./partials/menu.html");
-        loadHTML('#about-container', "./partials/about.html");
-        loadHTML('#lessons-container', "./partials/lessons.html");
-        loadHTML('#cta-container', "./partials/cta.html");
-        loadHTML('#team-container', "./partials/team.html");
-        loadHTML('#app-container', "./partials/application.html");
-        loadHTML('#feedback-container', "./partials/feedback.html");
-    });
-  </script>
