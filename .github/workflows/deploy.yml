@@ -15,16 +15,17 @@ jobs:
         with:
           node-version: '20'
 
+      # Install dependencies
       - run: npm install
 
-      # Set Git Config
-      - run: git config --global user.email "sergey.yangicher@gmail.com"
-      - run: git config --global user.name "Sergey Yangicher"
+      # Set Git Config (important for GitHub Actions)
+      - run: git config user.name "github-actions[bot]"
+      - run: git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Build the Project
-      - run: npm run deploy
+      # Build the project
+      - run: npm run build
 
       # Deploy Using `gh-pages` with GitHub Token
-      - run: npx gh-pages -d dist
+      - run: npx gh-pages -d dist --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/yangicher/goit-markup-final-project.git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
