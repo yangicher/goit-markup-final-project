@@ -14,5 +14,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
+      - run: npm git config --global user.email "sergey.yangicher@gmail.com"
+      - run: npm git config --global user.name "Sergey Yangicher"
       - run: npm run deploy
       - run: npx gh-pages -d src

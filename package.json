@@ -10,7 +10,7 @@
   "license": "ISC",
   "main": "index.js",
   "keywords": [],
-  "author": "",
+  "author": "siangicher <sergey.yangicher@gmail.com>",
   "dependencies": {
     "array-union": "^2.1.0",
     "async": "^3.2.6",
