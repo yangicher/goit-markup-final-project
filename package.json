@@ -15,6 +15,7 @@
   "devDependencies": {
     "fs-extra": "^11.3.0",
     "gh-pages": "^6.3.0",
+    "glob": "^11.0.1",
     "vite": "^6.2.2"
   },
   "description": "",
