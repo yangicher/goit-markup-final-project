@@ -6,15 +6,38 @@ body {
     padding: 0;
     margin: 0;
 
-    font-family: 'Manrope', sans-serif;
-    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
     line-height: 1.71;
     font-weight: 400;
     font-style: normal;
+    color: var(--color-black);
 }
 
 address {
     font-style: normal;
+}
+
+ol {
+    padding: 0;
+}
+
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
 }
 
 .section {
@@ -29,6 +52,37 @@ address {
 
     @media screen and (min-width: 1280px) {
         padding-bottom: 150px;
+    }
+}
+
+.section-header {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 0 96px;
+        margin-bottom: 64px;
+    }
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-description {
+    margin-top: 16px;
+
+    opacity: 0.5;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.66667;
+    color: var(--color-black);
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
     }
 }
 
@@ -61,4 +115,22 @@ address {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.underline {
+    position: relative;
+}
+.underline::after {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 20px;
+    display: block;
+
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+
+    border-radius: 8px;
+    background-color: var(--color-lightestgreen);
 }

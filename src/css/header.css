@@ -101,17 +101,20 @@
 }
 
 .header .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28572;
+    text-decoration: none;
+    color: var(--color-black);
+
     display: block;
     position: relative;
-    color: var(--color-black);
-    text-decoration: none;
-    font-weight: 600;
     transition: transform var(--animation);
 }
 
 .header .nav-link::before,
 .header .nav-link::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -160,7 +163,9 @@
     color: var(--color-black);
     background-color: var(--color-white);
     text-decoration: none;
-    transition: box-shadow var(--animation), transform var(--animation);
+    transition:
+        box-shadow var(--animation),
+        transform var(--animation);
     border-radius: 10px;
 }
 
