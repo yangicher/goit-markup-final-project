@@ -5,10 +5,14 @@
     --color-green: #4dc274;
     --color-green-hover: #38ae5f;
     --color-lightgreen: #d4fde1;
-    --color-highlight: #BEE8CC;
+    --color-lightestgreen: #bee8cc;
     --color-gray: #f3f5f6;
 
-    --green-gradient: linear-gradient(90deg, #4dc274 0%, #bee8cc 100%);
+    --green-gradient: linear-gradient(
+        90deg,
+        var(--color-green) 0%,
+        var(--color-lightestgreen) 100%
+    );
     --animation-delay: 0.2s;
     --animation: var(--animation-delay) ease-in-out;
     --transition: background-color var(--animation);
