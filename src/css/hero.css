@@ -47,31 +47,6 @@
     margin-bottom: 32px;
 }
 
-.hero-title-accent {
-    color: #bee8cc;
-}
-
-.hero-button {
-    padding: 16px 64px;
-    max-width: 306px;
-    height: 60px;
-    border-radius: 12px;
-    background-color: var(--color-green);
-    outline: none;
-    border: none;
-    color: var(--color-white);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.16;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color var(--animation);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-    background-color: #38ae5f;
-}
 
 .hero-scroll-down {
     margin-top: 83px;
@@ -110,16 +85,6 @@
     margin-bottom: 40px;
 }
 
-.hero-button {
-    margin: 0 0 58px;
-    padding: 14px;
-    width: 100%;
-    max-width: 313px;
-    height: 52px;
-    font-size: 14px;
-    line-height: 1.71;
-}
-
 .hero-scroll-down {
     margin-top: 20px;
 }
@@ -140,14 +105,6 @@
     .hero-title {
         width: 488px;
         font-size: 60px;
-    }
-
-    .hero-button {
-        font-size: 18px;
-        width: 306px;
-        height: 60px;
-        line-height: 1.56;
-        padding: 16px 64px;
     }
 
     .scroll-button {
@@ -174,14 +131,6 @@
     .hero-title {
         width: 564px;
         font-size: 60px;
-    }
-
-    .hero-button {
-        font-size: 18px;
-        width: 306px;
-        height: 60px;
-        line-height: 1.56;
-        padding: 16px 64px;
     }
 
     .scroll-button {
