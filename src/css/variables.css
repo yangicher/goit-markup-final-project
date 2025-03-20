@@ -1,6 +1,8 @@
 :root {
     --color-black: #121417;
     --color-white: #ffffff;
+    --color-white-10: #FFFFFF1A;
+    --color-white-60: #FFFFFF99;
     --color-dark-gray: rgba(18, 20, 23, 0.5);
     --color-green: #4dc274;
     --color-green-hover: #38ae5f;
