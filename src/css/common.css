@@ -37,6 +37,7 @@ h2 {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: -0.02em;
 }
 
@@ -66,10 +67,6 @@ h2 {
         padding: 0 96px;
         margin-bottom: 64px;
     }
-}
-
-.section-title {
-    text-align: center;
 }
 
 .section-description {
@@ -117,13 +114,6 @@ h2 {
     overflow: hidden;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-}
-
 .underline {
     position: relative;
 }
@@ -142,7 +132,6 @@ h2 {
     border-radius: 8px;
     background-color: var(--color-lightestgreen);
 }
-
 
 .subtitle {
     font-size: var(--font-size-18);
@@ -198,7 +187,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .btn {
-      font-size: var(--font-size-14);
-      max-width: 295px;
+        font-size: var(--font-size-14);
+        max-width: 295px;
     }
 }
