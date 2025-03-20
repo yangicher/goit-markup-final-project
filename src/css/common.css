@@ -143,7 +143,6 @@ h2 {
     background-color: var(--color-lightestgreen);
 }
 
-
 .subtitle {
     font-size: var(--font-size-18);
     color: var(--color-dark-gray);
@@ -198,7 +197,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .btn {
-      font-size: var(--font-size-14);
-      max-width: 295px;
+        font-size: var(--font-size-14);
+        max-width: 295px;
     }
 }
