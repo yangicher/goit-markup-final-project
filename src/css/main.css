@@ -3,10 +3,6 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./cta.css');
-
-@import url("./variables.css");
-@import url("./common.css");
 @import url("./about.css");
-@import url("./header.css");
-@import url("./hero.css");
 @import url("./team.css");
+@import url("./application.css");
