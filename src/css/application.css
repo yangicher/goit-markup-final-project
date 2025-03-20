@@ -24,12 +24,6 @@
     }
 }
 
-/*@media screen and (min-width: 768px) {
-    .subtitle {
-        margin-top: 16px;
-    }
-}*/
-
 @media screen and (min-width: 1280px) {
     .application-block {
         display: flex;
@@ -79,6 +73,7 @@
 
     color: var(--color-white);
 }
+
 .application-card-text {
     text-align: center;
     font-size: 16px;
@@ -93,14 +88,13 @@
     flex-direction: column;
     margin: 0px auto;
 }
+
 @media screen and (min-width: 1280px) {
     .application-form {
         margin: 0px;
     }
 }
 
-.application-feedback {
-}
 .application-input-group {
     display: flex;
     justify-content: center;
@@ -109,6 +103,7 @@
     gap: 18px;
     margin-bottom: 20px;
 }
+
 @media screen and (min-width: 1280px) {
     .application-input-group {
         margin-bottom: 32px;
@@ -136,13 +131,13 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.28em;
+    line-height: 1.28;
     color: var(--color-black);
 }
 @media screen and (min-width: 768px) {
     .application-form-input::placeholder {
         font-size: 16px;
-        line-height: 1.5em;
+        line-height: 1.5;
     }
 }
 
@@ -170,6 +165,7 @@
     padding: 0px;
     border: none;
 }
+
 @media screen and (min-width: 768px) {
     .application-radio-group {
         flex-direction: row;
@@ -196,8 +192,8 @@
 .application-radio {
     position: relative;
 }
+
 .application-radio-input {
-    /*display: none;*/
     position: absolute;
     width: 1px;
     height: 1px;
@@ -209,15 +205,17 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .application-radio-label {
     padding-left: 28px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.71em;
+    line-height: 1.71;
     letter-spacing: -0.28px;
     color: var(--color-black);
 }
+
 @media screen and (min-width: 768px) {
     .application-radio-label {
         font-size: 18px;
@@ -270,6 +268,7 @@
         height: 12px;
     }
 }
+
 .application-radio-input:checked + .application-radio-label::before {
     border-color: var(--color-green);
 }
