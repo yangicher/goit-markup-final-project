@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     column-gap: var(--indent-col);
     row-gap: var(--indent-col);
-    --indent-col: 80px;
+    --indent-col: 40px;
     --items: 1;
     --indent-row: var(--indent-col);
 }
