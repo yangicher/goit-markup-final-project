@@ -1,5 +1,3 @@
-
-
 @media screen and (min-width: 768px) {
     .application .section-description {
         padding: 0 23px;
@@ -12,92 +10,88 @@
     }
 }
 
-.application-block { 
+.application-block {
     display: flex;
 }
 
- .application-title {
-      margin-bottom: 40px;
-    }
+.application-title {
+    margin-bottom: 40px;
+}
 
 @media screen and (min-width: 768px) {
-        .application-title {
-          margin-bottom: 64px;
-        }
-      }
- 
-@media screen and (min-width: 768px) {
-    .subtitle{
+    .application-title {
+        margin-bottom: 64px;
+    }
+}
+
+/*@media screen and (min-width: 768px) {
+    .subtitle {
         margin-top: 16px;
     }
-  }
-
+}*/
 
 @media screen and (min-width: 1280px) {
     .application-block {
-      display: flex;
-      justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
-  }
-  
+}
 
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     .application-card-wrapper {
-      display: flex;
-      flex-direction: column;
-      padding: 0px 20px 40px 20px;
-      justify-content: flex-end;
-      align-items: center;
-      background-image: url('../img/application/2x.png');
-      background-repeat: no-repeat;
-      background-color: var(--color-green);
-      border-radius: 30px;
-      width: 492px;
-      height: 578px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px 40px 20px;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url("../img/application/2x.png");
+        background-repeat: no-repeat;
+        background-color: var(--color-green);
+        border-radius: 30px;
+        width: 492px;
+        height: 578px;
     }
-  }
+}
 
-  @media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .application-card-wrapper {
-      display: none;
+        display: none;
     }
-  }
+}
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .application-card-wrapper {
-      background-image: url('../img/application/3x.webp');
-      background-size: 492px;
-      background-position: top;
+        background-image: url("../img/application/3x.png");
+        background-size: 492px;
+        background-position: top;
     }
-  }
-  
+}
+
 .application-card-big-text {
     margin-bottom: 8px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 
-  color: var(--color-white);
-
+    color: var(--color-white);
 }
 .application-card-text {
     text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .application-form {
     display: flex;
     flex-direction: column;
     margin: 0px auto;
-
 }
 @media screen and (min-width: 1280px) {
     .application-form {
@@ -309,33 +303,33 @@
 
 @media screen and (min-width: 768px) {
     .application-form-btn {
-      padding: 16px 228px;
-      min-width: 500px;
-      height: 60px;
-      font-size: 18px;
-      line-height: 1.55;
+        padding: 16px 228px;
+        min-width: 500px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 1.55;
     }
-  }
-  
+}
+
 .application-form-policy {
     margin: 0 auto;
     width: 100%;
     max-width: 355px;
     font-size: 12px;
     line-height: 1.33;
-    color: var(--color-dark-gray);  
+    color: var(--color-dark-gray);
 }
 
 @media screen and (min-width: 768px) {
     .application-form-policy {
-      font-size: 14px;
-      line-height: 1.71;
-      max-width: 500px;
+        font-size: 14px;
+        line-height: 1.71;
+        max-width: 500px;
     }
-  }
-  
+}
+
 .application-form-policy-link {
     text-decoration-line: underline;
     text-decoration-color: var(--color-dark-gray);
-    color: var(--color-dark-gray);   
+    color: var(--color-dark-gray);
 }
