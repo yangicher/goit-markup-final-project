@@ -1,11 +1,5 @@
-/* Загальні стилі */
-body {
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    background-color: var(--color-gray);
-    color: var(--color-black);
-  }
-  
+
+
   /* Секція */
   .pricing-section {
     max-width: 1200px;
@@ -30,15 +24,22 @@ body {
   }
   
   /* Контейнер для карток */
-  .pricing-cards {
+  .pricing-list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    padding: 32px;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    list-style: none;
   }
   
   /* Оформлення картки */
-  .pricing-card {
+  .pricing-item {
     background-color: var(--color-white);
     border: 2px solid var(--color-green);
     border-radius: 20px;
@@ -54,16 +55,20 @@ body {
   }
   
   /* Виділена картка */
-  .pricing-card.highlight {
-    background: var(--green-gradient);
-    color: var(--color-black);
+  .pricing-item.highlight {
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border: var(--color-white 40%);
   }
   
   .pricing-card.highlight h3,
   .pricing-card.highlight .price {
     color: var(--color-black);
   }
-  
+  .pricing-item.highlight .btn {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7); 
+    color: rgba(255, 255, 255, 0.7);}
   .pricing-card.highlight button {
     background-color: transparent;
     border: 2px solid var(--color-black);
@@ -71,7 +76,7 @@ body {
   }
   
   /* Заголовки карток */
-  .pricing-card h3 {
+  .pricing-item h3 {
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -79,6 +84,10 @@ body {
   
   /* Ціна */
   .pricing-card .price {
+    width: 184;
+    height: 44;
+    top: 72px;
+    left: 68px;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-black);
@@ -94,7 +103,7 @@ body {
   }
   
   /* Кнопки */
-  .pricing-card button {
+  .pricing-item .btn {
     background-color: var(--color-green);
     color: var(--color-white);
     font-size: var(--font-size-18);
@@ -105,7 +114,7 @@ body {
     transition: var(--transition);
   }
   
-  .pricing-card button:hover {
+  .pricing-item .btn:hover {
     background-color: var(--color-green-hover);
   }
   
@@ -116,3 +125,11 @@ body {
       flex-direction: column;
       align-items: center;
     }
+    .subtitle {
+    color: var(--color-dark-gray);
+    }
+  .pricing-item.highlight .subtitle{
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+    
