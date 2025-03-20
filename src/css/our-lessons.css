@@ -1,0 +1,118 @@
+/* Загальні стилі */
+body {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    background-color: var(--color-gray);
+    color: var(--color-black);
+  }
+  
+  /* Секція */
+  .pricing-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Заголовок */
+  .pricing-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Опис */
+  .pricing-description {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: var(--color-dark-gray);
+    font-size: var(--font-size-18);
+    line-height: 1.6;
+  }
+  
+  /* Контейнер для карток */
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Оформлення картки */
+  .pricing-card {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-green);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Виділена картка */
+  .pricing-card.highlight {
+    background: var(--green-gradient);
+    color: var(--color-black);
+  }
+  
+  .pricing-card.highlight h3,
+  .pricing-card.highlight .price {
+    color: var(--color-black);
+  }
+  
+  .pricing-card.highlight button {
+    background-color: transparent;
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+  }
+  
+  /* Заголовки карток */
+  .pricing-card h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Ціна */
+  .pricing-card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+  }
+  
+  /* Опис */
+  .pricing-card p {
+    font-size: var(--font-size-14);
+    color: var(--color-dark-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Кнопки */
+  .pricing-card button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: var(--font-size-18);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .pricing-card button:hover {
+    background-color: var(--color-green-hover);
+  }
+  
+  /* Адаптивність */
+  @media (max-width: var(--tablet-width)){}
+
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
