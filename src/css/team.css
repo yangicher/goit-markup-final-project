@@ -15,6 +15,7 @@
 .team-list {
     margin-top: 40px;
     padding: 0;
+    
 }
 
 .team-item {
@@ -26,10 +27,12 @@
     margin-bottom: 16px;
 }
 .team-text {
-    min-width: 335px;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .team-name {
     font-weight: 700;
     font-size: 20px;
@@ -63,8 +66,10 @@
         margin-bottom: 8px;
     }
     .team-info {
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
+        width: 272px;
     }
 }
 
@@ -74,7 +79,7 @@
         --indent-col: 32px;
     }
 
-    .team-text {
-        min-width: 232px;
+    .team-info {
+        width: 232px;
     }
 }
