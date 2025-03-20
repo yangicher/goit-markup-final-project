@@ -18,12 +18,21 @@ address {
     font-style: normal;
 }
 
-ol {
+ol, ul {
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+    font-style: normal;
+}
 p,
 ol,
+ul,
 h1,
 h2,
 h3,

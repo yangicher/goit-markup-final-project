@@ -1,0 +1,21 @@
+.small-footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28em;
+    letter-spacing: -0.02;
+    color: #FFFFFF99;
+    opacity: 0.9;
+}
+.footer-end {
+    position: relative;
+    display: inline-block;
+}
+.footer-end::before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    width: 100%;
+    border: 1px;
+    border-color: #FFFFFF99;
+    opacity: 0.9;
+}
