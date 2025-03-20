@@ -125,25 +125,22 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Force white icons - more specific and with !important */
 #nav-container .soc-items .icon {
     width: 18px;
     height: 18px;
-    fill: var(--color-white) !important;
-    color: var(--color-white) !important;
-    stroke: none !important;
+    fill: var(--color-white);
+    color: var(--color-white);
+    stroke: none;
 }
 
-/* YouTube specific sizing */
 #nav-container .soc-items .soc-link:has(use[href*="youtube"]) .icon {
     width: 20px;
     height: 14px;
 }
 
-/* Extra specificity to override any SVG styling */
 #nav-container .soc-items .soc-link svg,
 #nav-container .soc-items .soc-link use {
-    fill: var(--color-white) !important;
-    color: var(--color-white) !important;
-    stroke: none !important;
+    fill: var(--color-white);
+    color: var(--color-white);
+    stroke: none;
 } 
