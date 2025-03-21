@@ -46,7 +46,8 @@ h2 {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.05em;
+    text-align: center;
+    letter-spacing: -0.02em;
 }
 
 .section {
@@ -75,10 +76,6 @@ h2 {
         padding: 0 96px;
         margin-bottom: 64px;
     }
-}
-
-.section-title {
-    text-align: center;
 }
 
 .section-description {
@@ -124,13 +121,6 @@ h2 {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
 }
 
 .underline {
