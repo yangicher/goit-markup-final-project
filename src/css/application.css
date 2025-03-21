@@ -1,6 +1,12 @@
+@media screen and (max-width: 767px) {
+    .application .section-description {
+        padding: 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .application .section-description {
-        padding: 0 23px;
+        padding: 0 59px;
     }
 }
 
@@ -14,15 +20,15 @@
     display: flex;
 }
 
-.application-title {
+/*.application-title {
     margin-bottom: 40px;
-}
+}*/
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
     .application-title {
         margin-bottom: 64px;
     }
-}
+}*/
 
 @media screen and (min-width: 1280px) {
     .application-block {
@@ -116,7 +122,7 @@
     height: 50px;
     padding: 16px 18px;
     border-radius: 12px;
-    border: 1px solid var(--color-black);
+    border: 1px solid rgba(18, 20, 23, 0.10);
     background-color: transparent;
     outline: transparent;
     resize: none;
@@ -185,7 +191,7 @@
 
 @media screen and (min-width: 768px) {
     .lapplication-radio-group-title {
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
 }
 
@@ -212,14 +218,14 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
     color: var(--color-black);
 }
 
 @media screen and (min-width: 768px) {
     .application-radio-label {
         font-size: 18px;
-        line-height: 1.33em;
+        line-height: 1.33;
         letter-spacing: -0.36px;
     }
 }
