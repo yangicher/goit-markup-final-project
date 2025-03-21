@@ -1,13 +1,12 @@
 .feedback .container {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
 }
 
 .feedback-list {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
 }
 
@@ -57,7 +56,7 @@
     font-weight: 700px;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.02px;
 }
 
 .student-position {
@@ -82,7 +81,6 @@
 @media screen and (min-width: 768px) {
     .feedback-list {
         flex-direction: row;
-
         justify-content: center;
         align-items: stretch;
         gap: 32px;
@@ -91,8 +89,11 @@
     .feedback-card:nth-child(-n + 2) {
         /* Показуємо тільки перші дві картки */
         display: flex;
-        flex: 1 1 calc(50% - 10px);
+        flex: calc((100% - 32px) / 2);
         max-width: 336px;
+
+        padding: 32px 16px 40px;
+        border-radius: 30px;
     }
 }
 
@@ -103,6 +104,10 @@
 
     .feedback-card {
         display: flex;
+        flex: calc((100% - 32px) / 2);
         max-width: 320px;
+
+        padding: 32px 16px 40px;
+        border-radius: 30px;
     }
 }
