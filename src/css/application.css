@@ -1,5 +1,9 @@
 .application .section-description {
     max-width: 709px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 586px;
+    }
 }
 
 .application-block {
