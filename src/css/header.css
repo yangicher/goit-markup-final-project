@@ -44,40 +44,67 @@
 .burger-menu {
     margin: 0;
     padding: 0;
-
     border: none;
     outline: none;
     background-color: transparent;
     cursor: pointer;
-
-    width: 32px;
-    height: 32px;
-
-    color: var(--color-black);
-
-    @media screen and (min-width: 768px) {
-        width: 40px;
-        height: 40px;
-    }
+    width: 40px;
+    height: 28px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    z-index: 12;
 
     @media screen and (min-width: 1280px) {
         display: none;
     }
 }
 
+.burger-line {
+    display: block;
+    width: 34px;
+    height: 3.5px;
+    background-color: var(--color-black);
+    position: absolute;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+}
+
+.burger-line-1 {
+    transform: translateY(-10px);
+}
+
+.burger-line-2 {
+    width: 24px;
+    transform: translateY(0);
+}
+
+.burger-line-3 {
+    transform: translateY(10px);
+}
+
+.burger-menu.is-open .burger-line-1,
+.burger-menu.is-open .burger-line-2,
+.burger-menu.is-open .burger-line-3 {
+    background-color: var(--color-white);
+}
+
+.burger-menu.is-open .burger-line-1 {
+    transform: translateY(0) rotate(45deg);
+}
+
+.burger-menu.is-open .burger-line-2 {
+    opacity: 0;
+}
+
+.burger-menu.is-open .burger-line-3 {
+    transform: translateY(0) rotate(-45deg);
+}
+
 .burger-menu-icon {
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-
-    width: 32px;
-    height: 32px;
-
-    @media screen and (min-width: 768px) {
-        width: 40px;
-        height: 40px;
-    }
+    display: none;
 }
 
 .header .nav-items {
@@ -159,24 +186,35 @@
 }
 
 .header .soc-link {
-    display: block;
-    color: var(--color-black);
-    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     text-decoration: none;
-    transition:
-        box-shadow var(--animation),
-        transform var(--animation);
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .header .soc-link:hover,
 .header .soc-link:focus {
-    box-shadow: 0 1px 4px var(--color-green);
-    transform: translateY(-1px);
+    border-color: var(--color-green);
 }
 
 .header .soc-link .icon {
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 28px;
+    height: 28px;
+    fill: var(--color-black);
+    opacity: 0.7;
+    transition: fill 0.3s ease;
+}
+
+.header .soc-link:hover .icon,
+.header .soc-link:focus .icon {
+    fill: var(--color-green);
+    opacity: 1;
 }
