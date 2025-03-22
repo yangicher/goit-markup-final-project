@@ -21,7 +21,7 @@
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
 }
 
 .about-item:not(.about-image-item)::before {
@@ -31,7 +31,7 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 1.14286;
-    letter-spacing: -0.035em;
+    letter-spacing: -0.02em;
     color: var(--color-green);
 
     counter-increment: item-counter;
