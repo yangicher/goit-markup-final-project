@@ -1,6 +1,8 @@
+
+
 @media screen and (max-width: 767px) {
     .application .section-description {
-        padding: 0;
+        padding: 0 59px;
     }
 }
 
@@ -19,16 +21,6 @@
 .application-block {
     display: flex;
 }
-
-/*.application-title {
-    margin-bottom: 40px;
-}*/
-
-/*@media screen and (min-width: 768px) {
-    .application-title {
-        margin-bottom: 64px;
-    }
-}*/
 
 @media screen and (min-width: 1280px) {
     .application-block {
