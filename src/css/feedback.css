@@ -111,3 +111,8 @@
         border-radius: 30px;
     }
 }
+
+.feedback-item-photo {
+    display: block;
+    max-width: 100%;
+}
